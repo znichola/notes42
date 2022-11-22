@@ -4,11 +4,11 @@ Used for the cours at 42Lausanne
 
 ## terminal commands
 
-****
-
 ### cmp
 
 `$ cmp foo bar` compares the two files
+
+`dd if=/dev/urandom of=foo bs=1000 count=1000` writes a 1mb file of random data
 
 ### inspecting binary files
 
@@ -19,7 +19,7 @@ Used for the cours at 42Lausanne
 
 `$ string a.out` to bump all printable string in a.out
 
-### readelf
+#### readelf
 
 `$ readelf  --symbols a.out` list all named symbols used
 
@@ -38,3 +38,9 @@ Used for the cours at 42Lausanne
 #### gcc
 
 `-g` flag add debug symbols to binary
+
+### signals
+
+`pgrep a.out` gets the process id for a.out
+
+`kill -INT 543` send a process an interupt signal
