@@ -44,3 +44,4 @@ Used for the cours at 42Lausanne
 `pgrep a.out` gets the process id for a.out
 
 `kill -INT 543` send a process an interupt signal
+`ps -A | less` list process running can also use `ps -e`
